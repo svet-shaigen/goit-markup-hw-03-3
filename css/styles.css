@@ -66,9 +66,13 @@
         margin-right: auto;
       }
 
-      .project {
+      .section {
         padding-top: 94px;
         padding-bottom: 94px;
+      }
+
+      .section:nth-child(3) {
+        padding-top: 0;
       }
 
       
@@ -200,7 +204,7 @@
        .team-item-title {
         font-weight: 500;
         font-size: 16px;
-        
+        margin-bottom: 10px;
        }
    
        .team-item-text {
