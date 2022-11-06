@@ -13,6 +13,9 @@
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #2F303A;
     --team-bg-color: #F5F4FA;
+
+    --border-project-color: #EEEEEE;
+    --border-header-color: #ECECEC;
     }
 
     body {
@@ -86,6 +89,8 @@
         display: block;
       }
 
+    
+
 
       
       /* -----------------HEADER---------------- */
@@ -156,7 +161,12 @@
       .navigation {
         margin-right: auto;
       }
+       
 
+      .header {
+        border-bottom: 1px solid var(--border-header-color);
+       
+      }
 
 
 
@@ -290,13 +300,23 @@
        .team-soc-list {
         display: flex;
         gap: 30px;
+        
        }
 
-    
+       .team-subtitle {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+       }
+
+
+
        
     /* -----------------FOOTER---------------- */
 
     .footer {
+      padding-top: 30px;
+      padding-bottom: 30px;
       background-color: var(--secondary-bg-color);
     }
     .logo-footer {
@@ -379,5 +399,28 @@
       line-height: calc(30 / 16);
       
       color: var(--primary-text-color);
+    }
+
+    .filter-lists {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+
+    .project-lists {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .project-list {
+      width: calc((100% - 60px) / 3);
+    }
+    
+    .project {
+      padding: 20px 24px;
+      border: 1px solid var(--border-project-color);
+      border-top: 0;
     }
         
