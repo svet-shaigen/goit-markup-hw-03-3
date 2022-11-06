@@ -228,6 +228,10 @@
           gap: 30px;
         }
 
+        .features-list {
+          flex-basis: calc((100%-90px) / 4);
+        }
+
 
 
         
